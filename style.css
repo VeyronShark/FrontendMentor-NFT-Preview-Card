@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutral */
+  --color-main-bg: hsl(217, 54%, 11%);
+  --color-card-bg: hsl(216, 50%, 16%);
+  --color-lineColor: hsl(215, 32%, 27%);
+
+  /* Primary */
+  --color-primary-blue: hsl(215, 51%, 70%);
+  --color-primary-cyan: hsl(178, 100%, 50%);
+  --color-primary-cyan-hover: hsla(178, 100%, 50%, 0.5);
+
+  /* Font */
+  --font-sans: "Outfit", sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .price-tag {
+    @apply flex items-center gap-2 text-[0.95rem];
+  }
+}

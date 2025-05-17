@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./tailwind-output.css">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body class="bg-main-bg flex justify-center items-center p-6 h-screen">
+
+  <div id="card" class="bg-card-bg rounded-xl p-6 max-w-[23rem] shadow-2xl">
+    <div id="card-photo" class="relative w-full h-full rounded-lg overflow-hidden">
+      <img src="./images/image-equilibrium.jpg" alt="" id="photo-img" class="w-full h-full">
+
+      <div id="photo-overlay" class="absolute flex items-center justify-center bg-primary-cyan-hover w-full h-full top-0 duration-150 cursor-pointer opacity-0 hover:opacity-100">
+        <img src="./images/icon-view.svg" alt="" id="overlay-icon">
+      </div>
+    </div>
+
+    <div id="card-details" class="text-white mt-5.5">
+      <span id="details-name" class="text-[1.4rem] font-semibold cursor-pointer duration-150 hover:text-primary-cyan md:text-[1.5rem]">Equilibrium #3429</span>
+
+      <p id="details-desc" class="font-light text-primary-blue my-4 md:text-lg md:mb-6">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div id="details-price" class="flex items-center justify-between pb-3 border-b border-lineColor md:pb-5">
+        <span id="price-current" class="price-tag text-primary-cyan">
+          <img src="./images/icon-ethereum.svg" alt="" id="current-icon">0.041 ETH
+        </span>
+
+        <span id="price-timeRemaining" class="price-tag text-primary-blue">
+          <img src="./images/icon-clock.svg" alt="" id="timeRemaining-icon">3 days left
+        </span>
+      </div>
+
+      <div id="details-author" class="flex items-center pt-3 md:pt-5 md:pb-3">
+        <img src="./images/image-avatar.png" alt="" id="author-img" class="w-9 border border-white rounded-full">
+
+        <p id="author-text" class="ml-5 font-normal text-primary-blue">
+          Creation of <span id="author-text-name" class="text-white cursor-pointer duration-150 hover:text-primary-cyan">Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
